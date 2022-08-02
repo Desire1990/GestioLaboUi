@@ -9,8 +9,9 @@ import store from './store'
 // import { far } from '@fortawesome/free-regular-svg-icons';
 // library.add(fas, far, fab)
 // dom.watch();
-
-
+import "bootstrap/dist/css/bootstrap.min.css"
+import "font-awesome/css/font-awesome.min.css"
+// import '@/main.css'
 createApp(App)
 .use(store)
 .use(router)
