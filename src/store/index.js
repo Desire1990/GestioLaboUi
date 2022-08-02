@@ -6,7 +6,7 @@ export default createStore({
     // url:'/api',
     url: 'http://localhost:8000/api',
     // url: 'https://redgoldinvest.com/api',
-    paquages:[],
+    domains:[],
     profiles:[],
     accounts:[],
     deposits:[],
