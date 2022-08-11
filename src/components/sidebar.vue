@@ -3,12 +3,14 @@
     <!-- side bar    -->
     <div class="sidebar">
             <div class="sidebar-brand">
-                <router-link to="/home"><h3><span><i class="fab fa-accusoft"></i></span><span id="kleenpulse">Gestion Lab</span></h3></router-link>
+                <center>
+                    <router-link to="/home"><h2><span><i class="fab fa-accusoft"></i></span><span id="kleenpulse">Gestion <br>Lab</span></h2></router-link>                
+                </center>
             </div>
             <div class="sidebar-menu">
                 <ul>
                     <li v-for = 'domain in domains' :key='domain.id'>
-                     <router-link :to="`/${domain.slug}`" class="nav-item nav-link active"><span class="fa fa-users"></span><strong>{{domain.name}}</strong></router-link>
+                     <router-link :to="`/${domain.slug}`" @click='getId(domain.id)' class="nav-item nav-link active"><span class="fa fa-users"></span><strong>{{domain.name}}</strong></router-link>
                     </li>
                 </ul>
             </div>
@@ -43,6 +45,11 @@
             }
           },
       },
+      methods:{
+        getId(id){
+            console.log(id)
+        }
+      }
 	}
 </script>
 <style scoped>
