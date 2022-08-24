@@ -4,14 +4,14 @@ import login from '../views/Login.vue'
 
 const routes = [
   {
-    path: '/home',
+    path: '/dashboard',
     name: 'home',
     component: HomeView
   },
   {
-    path: '/appareillage',
-    name: 'appareillage',
-    component: () => import('../views/AppareillageView.vue')
+    path: '/produit',
+    name: 'produit',
+    component: () => import('../views/Allproduit.vue')
   },
   {
     path: '/verrerie-associe',
