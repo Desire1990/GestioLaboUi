@@ -1,7 +1,7 @@
 <template>
 	<div class="mai-wrapper">
 		<div class="main-content">
-			            <header>
+			<header>
                 <h2 class="heading" id="dashboard">
                     Dashboard
                     </h2>
@@ -19,9 +19,9 @@
                     </div>
                     
                 </div>         
-                <div class="user-wrapper">
+                <div class="user-wrapper"  @click="loggout">
                     <div>
-                        <a class="fa fa-sign-out"  @click="loggout" style="font-size:48px;color:red"></a>
+                        <a class="fas fa-sign-out"  style="font-size:48px;color:red"></a>
                     </div>
                     <div>
                         <h4>Memoire</h4>
