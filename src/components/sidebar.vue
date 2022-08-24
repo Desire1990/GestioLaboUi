@@ -4,13 +4,36 @@
     <div class="sidebar">
             <div class="sidebar-brand">
                 <center>
-                    <router-link to="/home"><h2><span><i class="fab fa-accusoft"></i></span><span id="kleenpulse">Gestion <br>Lab</span></h2></router-link>                
+                    <router-link to="/home"><h3><span><i class="fab fa-accusoft"></i></span><br><span id="kleenpulse">Gestion Labo</span></h3></router-link>                
+                    
                 </center>
+                
             </div>
             <div class="sidebar-menu">
                 <ul>
-                    <li v-for = 'domain in domains' :key='domain.id'>
-                     <router-link :to="`/${domain.slug}`" @click='getId(domain.id)' class="nav-item nav-link active"><span class="fa fa-users"></span><strong>{{domain.name}}</strong></router-link>
+                    <li>
+                     <router-link to="/dashboard"  class="nav-item nav-link active"><span class="fa fa-dashboard"></span><strong>Dashboard</strong></router-link>
+                    </li>
+                    <li>
+                     <router-link to="/produit"  class="nav-item nav-link active"><span class="fa-solid fa-store" style='color: white ;padding:5px;'></span><strong>Produits</strong></router-link>
+                    </li>
+                    <li>
+                     <router-link to="/"  class="nav-item nav-link active"><span class="fa-solid fa-warehouse" style='color: white ;padding:5px;'></span><strong>Stocks</strong></router-link>
+                    </li>
+                    <li>
+                     <router-link to="/"  class="nav-item nav-link active"><span class="fa fa-store" style='color: white ;padding:5px;'></span><strong>Stocks Labo</strong></router-link>
+                    </li>
+                    <li>
+                     <router-link to="/"  class="nav-item nav-link active"><i class='fa fa-truck blue-color'  style='color: white ;padding:5px;'></i><strong>Commandes</strong></router-link>
+                    </li>
+                    <li>
+                     <router-link to="/"  class="nav-item nav-link active"><span class="fa fa-dashboard" style='color: white ;padding:5px;'></span><strong>Dashboard</strong></router-link>
+                    </li>
+                    <li>
+                     <router-link to="/"  class="nav-item nav-link active"><span class="fa fa-bank" style='color: white ;padding:5px;'></span><strong>Orders</strong></router-link>
+                    </li>
+                    <li>
+                     <router-link to="/"  class="nav-item nav-link active"><span class="fa fa-users" style='color: white ;padding:5px;'></span><strong>Utilusateurs</strong></router-link>
                     </li>
                 </ul>
             </div>
@@ -18,40 +41,6 @@
     <!-- side -->
 	
 </template>
-<script>
-    import axios from 'axios'
-	export default{
-		data(){
-			return{
-                domains:this.$store.state.domains,
-			}
-		},
-        mounted() {
-        axios.get(this.$store.state.url + "/domain/",this.header)
-            .then(res => {
-              this.domains = res.data.results
-              console.log(res.data.results)
-            })
-            .catch(err => {
-                console.error(err); 
-            })
-        },  
-        computed:{
-              header(){
-                  return{
-              headers :{
-                "Authorization" : `Bearer ${this.$store.state.user.access}`
-              },
-            }
-          },
-      },
-      methods:{
-        getId(id){
-            console.log(id)
-        }
-      }
-	}
-</script>
 <style scoped>
     :root {
     --for-heading: #3b026b;
