@@ -33,3 +33,12 @@ export default{
   },
 };
 </script>
+<style scoped>
+  body {
+    background: darkseagreen;
+     /*background: url(); */
+    backdrop-filter: blur(10px);
+    
+}
+
+</style>
