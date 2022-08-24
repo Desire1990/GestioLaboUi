@@ -4,7 +4,7 @@
       <main>
         <Stat/>
         <side/>
-        <Main/>
+        <!-- <Main/> -->
         <top/>
         <Footer/>
       </main>
@@ -33,7 +33,7 @@
     --dark-BG: #001623;
     --content-BG: #022d47;
     --dark-text: #b200ff;
-    --off-white: #f1f5f9;
+    --off-white: white;
     --icon-color: #520293;
     --purple: linear-gradient(45deg, #99013e, #7f02ed);
     --pink: linear-gradient(45deg, #770233, #ff0066);
@@ -64,7 +64,7 @@
 
 body {
     background: rgba(0, 0, 0, .1);
-     background: url(https://image.freepik.com/free-vector/abstract-gradient-shapes-background_79603-156.jpg); 
+     /*background: url(https://image.freepik.com/free-vector/abstract-gradient-shapes-background_79603-156.jpg); */
     backdrop-filter: blur(10px);
     
 }
