@@ -14,7 +14,7 @@
         <div class="card-single">
             <div>
                 <h1 id="customer"></h1>
-                <span>Happy Clients</span>
+                <span>Happy Users</span>
             </div>
             <div>
                 <span class="fa fa-users"></span>
@@ -23,7 +23,7 @@
         <div class="card-single">
             <div>
                 <h1 id="project"></h1>
-                <span>Projects Done!</span>
+                <span>Confirmed Commande!</span>
             </div>
             <div>
                 <span class="fa fa-clipboard"></span>
@@ -40,10 +40,10 @@
         </div>
         <div class="card-single">
             <div>
-                <h1><sup>$</sup>
+                <h1><sup>Orders</sup>
                     <p id="income"><b>k</b></p>
                 </h1>
-                <span>weekly Income</span>
+                <span>weekly repport</span>
             </div>
             <div>
                 <span class="fa fa-google-wallet"></span>
