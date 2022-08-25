@@ -15,7 +15,7 @@
                      <router-link to="/dashboard"  class="nav-item nav-link active"><span class="fa fa-dashboard"></span><strong>Dashboard</strong></router-link>
                     </li>
                     <li>
-                     <router-link to="/produit"  class="nav-item nav-link active"><span class="fa-solid fa-store" style='color: white ;padding:5px;'></span><strong>Produits</strong></router-link>
+                     <router-link to="/domain"  class="nav-item nav-link active"><span class="fa-solid fa-store" style='color: white ;padding:5px;'></span><strong>Produits</strong></router-link>
                     </li>
                     <li>
                      <router-link to="/"  class="nav-item nav-link active"><span class="fa-solid fa-warehouse" style='color: white ;padding:5px;'></span><strong>Stocks</strong></router-link>
@@ -27,7 +27,7 @@
                      <router-link to="/"  class="nav-item nav-link active"><i class='fa fa-truck blue-color'  style='color: white ;padding:5px;'></i><strong>Commandes</strong></router-link>
                     </li>
                     <li>
-                     <router-link to="/"  class="nav-item nav-link active"><span class="fa fa-dashboard" style='color: white ;padding:5px;'></span><strong>Dashboard</strong></router-link>
+                     <!-- <router-link to="/"  class="nav-item nav-link active"><span class="fa fa-dashboard" style='color: white ;padding:5px;'></span><strong>Dashboard</strong></router-link> -->
                     </li>
                     <li>
                      <router-link to="/"  class="nav-item nav-link active"><span class="fa fa-bank" style='color: white ;padding:5px;'></span><strong>Orders</strong></router-link>
