@@ -66,7 +66,7 @@ export default {
                 "password": this.password
             }).then((response) => {
                 this.$store.state.user = response.data;
-                const toPath = this.$route.query.to || '/home'
+                const toPath = this.$route.query.to || '/dashboard'
                 this.$router.push(toPath)
                 toast({
                     message: 'logged in successfully!',
@@ -75,12 +75,12 @@ export default {
                     duration: 2000,
                     position: 'center'
                 })
-                this.$router.push('/home')
+                this.$router.push('/dashboard')
             }).catch((error) => {
                 if (!error.response) {
                     this.logs = JSON.stringify(error.response.data)
                 } else {
-                    this.logs = "Invalid password...";
+                    this.logs = "Invalid username or password...";
                 }
             });
         }

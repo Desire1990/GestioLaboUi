@@ -9,10 +9,20 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/produit',
-    name: 'produit',
-    component: () => import('../views/Allproduit.vue')
+    path: '/domain',
+    name: 'domain',
+    component: () => import('../views/Domain.vue')
   },
+  // {
+  //   path: '/category/:id',
+  //   name: 'category',
+  //   component: () => import('../views/Category.vue')
+  // },
+  // {
+  //   path: '/products',
+  //   name: 'product',
+  //   component: () => import('../views/Product.vue')
+  // },
   {
     path: '/verrerie-associe',
     name: 'verrerie-associe',
